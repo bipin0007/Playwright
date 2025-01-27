@@ -38,8 +38,9 @@ public class ExtentManager {
 	        htmlReporter.config().setDocumentTitle(fileName);
 	        htmlReporter.config().setEncoding("utf-8");
 	        htmlReporter.config().setReportName(fileName);
-	        htmlReporter.config().setCss("body { font-family: Arial, sans-serif; }");
-	        htmlReporter.config().setJs("console.log('Extent Report Loaded');");
+	        htmlReporter.config().setCss("body { font-family: Arial, sans-serif; margin: 0 15px; }");
+	        htmlReporter.config().setJs("console.log('Custom Extent Report Loaded');");
+
 	        
 	        extent = new ExtentReports();
 	        extent.attachReporter(htmlReporter);
