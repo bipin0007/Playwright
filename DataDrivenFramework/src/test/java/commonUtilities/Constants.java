@@ -20,7 +20,7 @@ public class Constants {
 	
 	public static String SUITE_XL_PATH = System.getProperty("user.dir") + "/src/test/resources/testdata/Suite.xlsx";
 	public static String SUITE1_XL_PATH = System.getProperty("user.dir") + "/src/test/resources/testdata/BankManagerSuite.xlsx";
-	public static String SUITE2_XL_PATH=System.getProperty("user.dir") + "/src/test/resources/testdata/CustomerSuite.xlsx";
+	public static String SUITE2_XL_PATH= System.getProperty("user.dir") + "/src/test/resources/testdata/CustomerSuite.xlsx";
 	
 
 }

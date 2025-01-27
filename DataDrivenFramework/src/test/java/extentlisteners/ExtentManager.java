@@ -29,13 +29,17 @@ public class ExtentManager {
 	
 
 	    public static ExtentReports createInstance(String fileName) {
-	        ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);
+	       // ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);
 	       
+	        ExtentSparkReporter htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/" + fileName);
+
 	        
 	        htmlReporter.config().setTheme(Theme.STANDARD);
 	        htmlReporter.config().setDocumentTitle(fileName);
 	        htmlReporter.config().setEncoding("utf-8");
 	        htmlReporter.config().setReportName(fileName);
+	        htmlReporter.config().setCss("body { font-family: Arial, sans-serif; }");
+	        htmlReporter.config().setJs("console.log('Extent Report Loaded');");
 	        
 	        extent = new ExtentReports();
 	        extent.attachReporter(htmlReporter);
@@ -54,7 +58,9 @@ public class ExtentManager {
 			Date d = new Date();
 			 fileName = d.toString().replace(":", "_").replace(" ", "_")+".jpg";
 
-			BaseTest.getPage().screenshot(new ScreenshotOptions().setPath(Paths.get("./reports/"+fileName)));
+			//BaseTest.getPage().screenshot(new ScreenshotOptions().setPath(Paths.get("./reports/"+fileName)));
+			BaseTest.getPage().screenshot(new ScreenshotOptions().setPath(Paths.get(System.getProperty("user.dir") + "/reports/" + fileName)));
+
 			
 //		File screeshot = ((TakesScreenshot)  BaseTest.driver).getScreenshotAs(OutputType.FILE);
 //			FileUtils.copyFile(screeshot, new File(".//reports//"+fileName));
