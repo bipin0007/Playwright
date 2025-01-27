@@ -29,9 +29,9 @@ public class ExtentManager {
 	
 
 	    public static ExtentReports createInstance(String fileName) {
-	       // ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);
+	       ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);
 	       
-	        ExtentSparkReporter htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/" + fileName);
+	        //ExtentSparkReporter htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/reports/" + fileName);
 
 	        
 	        htmlReporter.config().setTheme(Theme.STANDARD);

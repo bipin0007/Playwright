@@ -27,10 +27,10 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
 	static String fileName = "Extent_" + System.currentTimeMillis() + ".html";
 
 
-//	private static ExtentReports extent = ExtentManager
-//			.createInstance("./reports/" + fileName);
+	private static ExtentReports extent = ExtentManager
+			.createInstance("./reports/" + fileName);
 	
-	private static ExtentReports extent = ExtentManager.createInstance(System.getProperty("user.dir") + "/reports/" + fileName);
+	//private static ExtentReports extent = ExtentManager.createInstance(System.getProperty("user.dir") + "./reports/" + fileName);
 
 
 
