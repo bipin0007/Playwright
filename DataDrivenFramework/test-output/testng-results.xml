@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-27T00:26:21 IST" name="Data Driven Framework" finished-at="2025-01-27T00:27:05 IST" duration-ms="44482">
+    <groups>
+    </groups>
+    <test started-at="2025-01-27T00:26:21 IST" name="Bank Manager Login Test" finished-at="2025-01-27T00:26:25 IST" duration-ms="4731">
+      <class name="testcases.BankManagerLoginTest">
+        <test-method signature="LoginAsBankManager()[pri:0, instance:testcases.BankManagerLoginTest@26425897]" started-at="2025-01-27T00:26:21 IST" name="LoginAsBankManager" finished-at="2025-01-27T00:26:25 IST" duration-ms="4630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAsBankManager -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.BankManagerLoginTest@26425897]" started-at="2025-01-27T00:26:25 IST" name="quit" finished-at="2025-01-27T00:26:25 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testcases.BankManagerLoginTest -->
+    </test> <!-- Bank Manager Login Test -->
+    <test started-at="2025-01-27T00:26:21 IST" name="Open Account Test" finished-at="2025-01-27T00:27:00 IST" duration-ms="39676">
+      <class name="testcases.OpenAccountTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.OpenAccountTest@ed3068a]" started-at="2025-01-27T00:26:21 IST" name="setUp" finished-at="2025-01-27T00:26:21 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="openAccountTest(java.util.Hashtable)[pri:0, instance:testcases.OpenAccountTest@ed3068a]" started-at="2025-01-27T00:26:21 IST" name="openAccountTest" data-provider="bankManagerDP" finished-at="2025-01-27T00:26:51 IST" duration-ms="29762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{currency=Rupee, browser=chrome, Runmode=Y, customer=Harry Potter}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.OpenAccountTest@ed3068a]" started-at="2025-01-27T00:26:51 IST" name="quit" finished-at="2025-01-27T00:26:51 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method signature="openAccountTest(java.util.Hashtable)[pri:0, instance:testcases.OpenAccountTest@ed3068a]" started-at="2025-01-27T00:26:51 IST" name="openAccountTest" data-provider="bankManagerDP" finished-at="2025-01-27T00:26:55 IST" duration-ms="4130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{currency=Dollar, browser=chromium, Runmode=Y, customer=Ron Weasly}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.OpenAccountTest@ed3068a]" started-at="2025-01-27T00:26:55 IST" name="quit" finished-at="2025-01-27T00:26:55 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method signature="openAccountTest(java.util.Hashtable)[pri:0, instance:testcases.OpenAccountTest@ed3068a]" started-at="2025-01-27T00:26:55 IST" name="openAccountTest" data-provider="bankManagerDP" finished-at="2025-01-27T00:27:00 IST" duration-ms="5026" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{currency=Dollar, browser=Firefox, Runmode=Y, customer=Hermoine Granger}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.OpenAccountTest@ed3068a]" started-at="2025-01-27T00:27:00 IST" name="quit" finished-at="2025-01-27T00:27:00 IST" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testcases.OpenAccountTest -->
+    </test> <!-- Open Account Test -->
+    <test started-at="2025-01-27T00:26:21 IST" name="Add customer Test" finished-at="2025-01-27T00:27:05 IST" duration-ms="44482">
+      <class name="testcases.AddCustomerTest">
+        <test-method signature="addCustomerTest(java.util.Hashtable)[pri:0, instance:testcases.AddCustomerTest@40c80397]" started-at="2025-01-27T00:26:21 IST" name="addCustomerTest" data-provider="bankManagerDP" finished-at="2025-01-27T00:26:52 IST" duration-ms="30919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{browser=chrome, postcode=A234324, Runmode=Y, lastname=Arora, firstname=Raman}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.AddCustomerTest@40c80397]" started-at="2025-01-27T00:26:52 IST" name="quit" finished-at="2025-01-27T00:26:52 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method signature="addCustomerTest(java.util.Hashtable)[pri:0, instance:testcases.AddCustomerTest@40c80397]" started-at="2025-01-27T00:26:52 IST" name="addCustomerTest" data-provider="bankManagerDP" finished-at="2025-01-27T00:26:57 IST" duration-ms="4848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{browser=Firefox, postcode=D53434, Runmode=Y, lastname=Arora, firstname=Rahul}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.AddCustomerTest@40c80397]" started-at="2025-01-27T00:26:57 IST" name="quit" finished-at="2025-01-27T00:26:57 IST" duration-ms="437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method signature="addCustomerTest(java.util.Hashtable)[pri:0, instance:testcases.AddCustomerTest@40c80397]" started-at="2025-01-27T00:26:57 IST" name="addCustomerTest" data-provider="bankManagerDP" finished-at="2025-01-27T00:27:01 IST" duration-ms="3732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{browser=chromium, postcode=A1C099, Runmode=Y, lastname=Singh, firstname=Bipin }]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.AddCustomerTest@40c80397]" started-at="2025-01-27T00:27:01 IST" name="quit" finished-at="2025-01-27T00:27:01 IST" duration-ms="418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method signature="addCustomerTest(java.util.Hashtable)[pri:0, instance:testcases.AddCustomerTest@40c80397]" started-at="2025-01-27T00:27:01 IST" name="addCustomerTest" data-provider="bankManagerDP" finished-at="2025-01-27T00:27:05 IST" duration-ms="3684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{browser=chromium, postcode=AB5789, Runmode=Y, lastname=Singh, firstname=Ank}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.AddCustomerTest@40c80397]" started-at="2025-01-27T00:27:05 IST" name="quit" finished-at="2025-01-27T00:27:05 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testcases.AddCustomerTest -->
+    </test> <!-- Add customer Test -->
+  </suite> <!-- Data Driven Framework -->
+</testng-results>
